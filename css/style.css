@@ -123,3 +123,36 @@ canvas {
   80% { opacity: 1; transform: scale(1) translateY(-20px); }
   100% { opacity: 0; transform: scale(1.2) translateY(-40px); }
 }
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+
+  #hellen {
+    font-size: 10vw !important;
+    padding: 0.4em 1em;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .teamo {
+    font-size: 5vw !important;
+    text-align: center;
+  }
+
+  .amor-j {
+    font-size: 4.5vw !important;
+    padding: 0.5em 1em;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 90vw;
+  }
+}
